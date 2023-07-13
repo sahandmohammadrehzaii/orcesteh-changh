@@ -1,0 +1,47 @@
+#center-1 {
+	text-align: center;
+	margin-top: 110px;
+	font-size: 40px;
+	color: #FA8072;
+	background: #1111;
+}
+#center {
+	text-align: center;
+	margin-top: 110px;
+	font-size: 40px;
+	color: #FA8072;
+	background: white;
+}
+#right {
+text-align: right;
+margin-top: 110px;
+font-size: 40px;
+color: #FA8072;
+background: #1111;
+}
+
+#left {
+text-align: left;
+margin-top: 110px;
+font-size: 20px;
+color: #FA8072;
+background: #1111;
+}
+/*???*/
+.beautiful-label {
+  background-color: #FFDEAD;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+}
+/*cdsdc*/
+video {
+  width: 500px;
+  height: 500px;
+}

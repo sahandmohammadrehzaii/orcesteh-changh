@@ -1,0 +1,22 @@
+#center-1 {
+	text-align: center;
+	margin-top: 110px;
+	font-size: 40px;
+	color: #FA8072;
+	background: #1111;
+}
+#right {
+text-align: right;
+margin-top: 110px;
+font-size: 40px;
+color: #FA8072;
+background: #1111;
+}
+
+#left {
+text-align: left;
+margin-top: 110px;
+font-size: 20px;
+color: #FA8072;
+background: #1111;
+}

@@ -1,0 +1,355 @@
+.container{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    direction: rtl;
+}
+
+#introduce{
+    display: block;
+    width: 100%;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 5px;
+    background-color: #4CAF50;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+
+/* Page Style */
+
+@font-face{font-family:Shabnam;src: url(../font/Shabnam.ttf) format("truetype");font-weight:400}
+
+body {
+  background-color: lightgray;
+  font-family: 'Shabnam';
+  margin: 0;
+}
+
+.dynamic-element{
+	display: none;
+}
+
+.active-element{
+	display: block;
+}
+
+.calendar-wrapper{
+	text-align: left;
+	direction: ltr;
+	float: right;
+}
+
+.clearfix, .clearfix::before, .clearfix::after{
+	clear: both;
+	content: "";
+	display:black;
+}
+
+.calendar-base {
+  width: 900px;
+  height: 570px;
+  border-radius: 20px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  color: black;
+  overflow: hidden;
+}
+
+.active-season{
+	background-color: #d3cccc !important;
+	color:white !important;
+}
+
+.active-season-bg{
+	background-color: #d3cccc !important;
+}
+
+.active-season-cr{
+	color: #d3cccc !important;
+}
+
+.month-hover.active-season-cr{
+	font-weight: bold;
+}
+
+.holiday{
+	background-color: #f44336;
+	color:#fff !important;
+}
+
+.holiday:hover{
+	background-color: #d3cccc !important;
+}
+
+.disable-one{
+	opacity: 0.3;
+}
+
+.year {
+  color: #d3cccc;
+  font-size: 30px;
+  float: right;
+  position: relative;
+  right: 45px;
+  top: 30px;
+  font-weight: bold;
+}
+
+.year-meta{
+	position: absolute;
+	left: 335px;
+	top: 25px;
+	color: #d3cccc;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid #E8E8E8;
+  border-bottom: 5px solid transparent;
+  float: right;
+  position: relative;
+  right: 90px;
+  top: 36px;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid #E8E8E8;
+  border-bottom: 5px solid transparent;
+  float: right;
+  position: relative;
+  left: 20px;
+  top: 36px;
+}
+.triangle-left:hover{
+  border-right: 10px solid#2ECC71;
+}
+.triangle-right:hover{
+  border-left: 10px solid#2ECC71;
+}
+
+.month-color {
+  color: #27AE60;
+}
+.month-hover:hover{
+  cursor: pointer;
+  color: #d3cccc !important;
+}
+
+.months {
+  color: #6b6b6b;
+  position: relative;
+  left: 340px;
+  top: 90px;
+  word-spacing: 5px;
+}
+
+.month-line {
+  border-color: #E8E8E8;
+  position: relative;
+  top: 85px;
+  width: 57%;
+  left: 178px;
+}
+
+.days {
+  color: #6b6b6b;
+  position: relative;
+  font-size: 18px;
+  left: 14px;
+  top: 80px;
+  word-spacing: 35px;
+  font-weight: 600;
+}
+
+.days ul{
+	margin: 0;
+}
+
+.days ul li{
+  background-color: transparent !important;
+  height: auto !important;
+  word-spacing: -4px;
+  font-size: 16px;
+}
+
+.num-dates {
+   float: right;
+   position: relative;
+   top: 90px;
+   right: 44px;
+   z-index: 1;
+}
+
+.num-dates ul{
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+.num-dates ul li, .days ul li{
+	float: right;
+    list-style: none;
+    text-align: center;
+    margin-left: 11px;
+    width: 64px;
+	font-weight: bold;
+}
+
+.num-dates ul li{
+	padding: 10px 0;
+	cursor: pointer;
+	font-size: 22px;
+	border-radius: 9px;
+	position: relative;
+	box-shadow: 0 0 35px #e5e3e3;
+	color: #6b6b6b;
+}
+
+.num-dates ul li:hover{
+	background-color: #d3cccc;
+	color: white;
+}
+
+.num-dates ul li small{
+	position: absolute;
+	font-size: 12px;
+    font-weight: normal;
+	bottom: 2px;
+}
+
+.num-dates ul li small#miladi{
+    right: 7px;
+}
+
+.num-dates ul li small#ghamari{
+    left: 7px;
+}
+
+.active-day {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #2ECC71;
+  position: relative;
+  top: 295px;
+  left: 661px;
+}
+
+.white {
+  color: white;
+}
+
+.event-indicator {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #2980B9;
+  position: relative;
+  top: 304px;
+  left: 695px;
+}
+
+.two {
+  position: relative;
+  top: 168px;
+  left: 535px;
+}
+
+.grey {
+  color: #AAAAB1;
+}
+
+.calendar-left {
+  width: 300px;
+  height: 570px;
+  border-radius: 20px 0px 0px 20px;
+  background-color: #2ECC71;
+  position: relative;
+  z-index: 1;
+  bottom: 570px;
+  color: white;
+}
+
+.hamburger {
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+.burger-line:hover, .hamburger:hover{
+  background-color:#27e879 !important;
+}
+
+.burger-line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 15%;
+  margin-bottom: 3px;
+}
+
+.num-date {
+  font-size: 150px;
+  width: 50%;
+  margin: 0 auto;
+  font-weight: 700;
+  position: relative;
+  top: -20px;
+}
+
+.day {
+  width: 50%;
+  margin: 0px auto;
+  font-size: 30px;
+  position: relative;
+  bottom: 77px;
+  text-align: center;
+}
+
+.current-events {
+  font-size: 15px;
+  position: relative;
+  margin-left: 25px;
+  bottom: 30px;
+}
+
+.posts {
+  text-decoration: underline dotted;
+}
+.posts:hover{
+  color:#27e879 !important;
+}
+
+.events-list{
+	direction: rtl;
+	float: right;
+	position: relative;
+    top: -83px;
+    width: 93%;
+	height: 377px;
+    overflow-y: scroll;
+    padding-right: 8px;
+    text-align: right;
+}
+
+.events-list li{
+	margin-bottom: 6px;
+	font-size: 14px;
+}
+
+.events-list li span.event-day{
+	font-weight: bold;
+}
+
+.events-list li div.event-title{
+	display: inline-block;
+	margin-left: 3px;
+}
